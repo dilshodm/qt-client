@@ -138,7 +138,7 @@ char * DictMgr::mystrsep(char ** stringp, const char delim)
      char * dp = (char *)memchr(mp,(int)((unsigned char)delim),n);
      if (dp) {
         *stringp = dp+1;
-        int nc = (int)((unsigned long)dp - (unsigned long)mp); 
+        ptrdiff_t nc = dp - mp;
         rv = (char *) malloc(nc+1);
         if (rv) {
            memcpy(rv,mp,nc);
