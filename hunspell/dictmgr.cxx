@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdio.h>
+#include <cstddef>
 
 #include "dictmgr.hxx"
 

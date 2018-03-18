@@ -5,6 +5,7 @@
 #include <string.h>
 #include <stdio.h> 
 #include <ctype.h>
+#include <cstddef>
 
 #include "csutil.hxx"
 #include "atypes.hxx"
